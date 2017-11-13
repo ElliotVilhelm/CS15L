@@ -15,7 +15,7 @@ done
 run="Y"
 while [ "$run" != "N" ]; do
 
-	echo; echo  "########   Select (A)RRAY (P)ROCESSES (F)ILES   ########"
+	echo; echo  "########   Select (A)RRAY (P)ROCESSES (F)ILES (M)AKE  ########"
 	read choice
 	if [ "$choice" == "a" ]; then
 		## ARRAYS
@@ -101,6 +101,10 @@ while [ "$run" != "N" ]; do
 	elif [ "$choice" == "m" ]; then	
 		echo "~~~~~~~~~~~~~~~~    Welcome to MakeFiles!\
 			~~~~~~~~~~~~~~~~"
+		echo -e "\t MakeFiles can be used for automating tedious bash commands"
+		echo -e "\t A common usage is in C and C++ files"
+		echo -e "\t An very simple example of a make file looks as such :\n"
+		cat makefile
 
 
 
