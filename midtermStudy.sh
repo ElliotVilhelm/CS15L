@@ -59,8 +59,7 @@ while [ "$run" != "N" ]; do
 		echo ">>>>>>$   man vim | grep doc > newfile.txt"
 		echo ">>>>>>$   ls | wc -l > count.txt"
 		man vim | grep doc > newfile.txt
-		ls | wc -l > count.txt 
-		
+		ls | wc -l > count.txt  	
 		read trash
 		echo; echo
 		echo "****  Pop Quiz!!!!  ****"
@@ -68,13 +67,31 @@ while [ "$run" != "N" ]; do
 		echo -e "\tA) The vim Documentation"
 		echo -e "\tB) Nothing newfile.txt is empty"
 		echo -e "\tC) Lines with 'doc' from the vim man page"
-
 		read answer
 		if [ "$answer" != "c" ]; then
 			echo "~~~     Wrong!"
 		else
 			echo "~~~     Correct!"
 		fi
+
+		echo "##  How many number are in count.txt"
+		echo -e "\tA) 1"
+		echo -e "\tB) 2"
+		echo -e "\tC) 3"
+		read answer
+		if [ "$answer" != "a" ]; then
+			echo "~~~     Wrong!"
+		else
+			echo "~~~     Correct!"
+		fi
+
+	elif [ "$choice" == "p" ]; then
+		echo "~~~~~~~~~~~~~~~~    Welcome to PS Command!\
+			~~~~~~~~~~~~~~~~"
+		echo -e "\t*ps is used to report information on running processes"
+		echo "The -e argument lists all processes on the system, including other users"
+		echo "The -f argument provides more information"
+		echo "In every unix system PID=1 is the gradparent, the parent of all children"
 
 	else
 		echo "Not a valid choice"
