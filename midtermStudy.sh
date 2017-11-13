@@ -15,7 +15,7 @@ done
 run="Y"
 while [ "$run" != "N" ]; do
 
-	echo; echo  "########   Select (A)RRAY (P)ROCESSES (F)ILES (M)AKE  ########"
+	echo; echo  "########   Select (A)RRAY (P)ROCESSES (F)ILES (M)AKE  (E)NV  ########"
 	read choice
 	if [ "$choice" == "a" ]; then
 		## ARRAYS
@@ -108,8 +108,21 @@ while [ "$run" != "N" ]; do
 
 
 
+	elif [ "$choice" == "e" ]; then			
+		echo "~~~~~~~~~~~~~~~~    Welcome to Env Variables!\
+				~~~~~~~~~~~~~~~~"
+		echo -e "\tPATH lists directories that the shell will search for commands"
+		echo PATH: $PATH
+		echo; echo
+		echo  -e "\tHOME User's home directory"
+		echo HOME: $HOME
+		echo; echo
+		echo -e "\tSHELL The current shell"
+		echo SHELL: $SHELL
+		echo; echo
 	else
 		echo "Not a valid choice"
+
 	fi
 	
 	echo; echo
