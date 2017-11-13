@@ -89,15 +89,26 @@ while [ "$run" != "N" ]; do
 		echo "~~~~~~~~~~~~~~~~    Welcome to PS Command!\
 			~~~~~~~~~~~~~~~~"
 		echo -e "\t*ps is used to report information on running processes"
-		echo "The -e argument lists all processes on the system, including other users"
+		echo "The -a argument lists processes from all users"
+		echo "The -e argument lists all processes on the system"
 		echo "The -f argument provides more information"
 		echo "In every unix system PID=1 is the gradparent, the parent of all children"
+		echo "The PID of the kernel is 0"
+		echo; echo
+		echo "# Running the command ps -ef | grep user"
+		ps -ef | grep user
+
+	elif [ "$choice" == "m" ]; then	
+		echo "~~~~~~~~~~~~~~~~    Welcome to MakeFiles!\
+			~~~~~~~~~~~~~~~~"
+
+
 
 	else
 		echo "Not a valid choice"
 	fi
 	
-
+	echo; echo
 	echo "Again? (Y/N)"
 	read run
 
