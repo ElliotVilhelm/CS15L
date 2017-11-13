@@ -15,7 +15,7 @@ done
 run="Y"
 while [ "$run" != "N" ]; do
 
-	echo; echo  "########   Select (A)RRAY (V)ARIABLES (F)ILES   ########"
+	echo; echo  "########   Select (A)RRAY (P)ROCESSES (F)ILES   ########"
 	read choice
 	if [ "$choice" == "a" ]; then
 		## ARRAYS
@@ -113,77 +113,3 @@ while [ "$run" != "N" ]; do
 	read run
 
 done
-# cat ~/Desktop/get-pip.py > hailmarry.txt
-
-# z=0
-# while [ $z -lt 5 ]; do
-# 	echo Where tf is cheng cheng
-# 	let z=z+1
-# done
-
-# for i in $( ls ); do
-# 	echo item from ls: $i
-# done
-
-# echo lets look at some processes
-
-# ps -aef | grep Reaper
-# # the a is all users not just current
-# # the e is list information aboput processes
-# # the f is a list of fewer items
-
-# echo lets get some info about reaper
-# finger Reaper
-
-# mydir=`pwd` 
-# # remeber the ` lets us run a command
-# echo my directory:  $mydir
-
-# echo who command outputs
-# who
-# echo the number of lines in who is
-# who | wc -l
-
-# who | wc -l #: Prints the number of lines in a file.
-# who | wc -w #: prints the number of words in a file.
-# who | wc -m #: prints the count of characters from a file.
-
-# # default wc gives lines words bytes
-# who | wc
-
-
-# samp=10
-
-# if [ $samp -lt 20 ]
-# then
-# 	echo cunt samp is less than 20
-# else
-# 	echo cunt life
-# fi
-
-
-
-## ARRAYS
-# a[4]=bob
-# a[10]=sam
-# a[2]=jim
-# # a=( one two three )
-# for i in "${a[@]}"
-# do
-# 	echo $i
-# done
-
-
-
-# area[51]=UFOs
-# area[11]=23
-# echo ${area[11]}    #  {curly brackets} needed.
-# #  Array members need not be consecutive or contiguous.
-
-# #  Some members of the array can be left uninitialized.
-# #  Gaps in the array are okay.
-# #  In fact, arrays with sparse data ("sparse arrays")
-# #+ are useful in spreadsheet-processing software.
-
-
-# echo -n "area[11] = "
