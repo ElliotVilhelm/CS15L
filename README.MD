@@ -8,4 +8,4 @@ echo "EXECUTE ME?"
 
 ## chmod 777 ??????
 
-![life](life.jpg?raw=true "Title")
+![life](life.png?raw=true "Title")
