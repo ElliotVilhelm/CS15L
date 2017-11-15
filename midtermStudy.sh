@@ -15,7 +15,7 @@ done
 run="Y"
 while [ "$run" != "N" ]; do
 
-	echo; echo  "########   Select (A)RRAY (P)ROCESSES (F)ILES (M)AKE  (E)NV  ########"
+	echo; echo  "########   Select (A)RRAY (P)ROCESSES P(I)PES (M)AKE  (E)NV  ########"
 	read choice
 	if [ "$choice" == "a" ]; then
 		## ARRAYS
@@ -49,8 +49,8 @@ while [ "$run" != "N" ]; do
 		do
 			echo "imAnArrayToo: $i"
 		done
-	elif [ "$choice" == "f" ]; then
-		echo "~~~~~~~~~~~~~~~~    Welcome to Files!\
+	elif [ "$choice" == "i" ]; then
+		echo "~~~~~~~~~~~~~~~~    Welcome to Pipes!\
 			~~~~~~~~~~~~~~~~"
 		echo "##    Lets make some files to mess with!"
 		echo "**   redirection operator '>' operator will overwrite a file, the >> operator will append to a file"
